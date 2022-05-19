@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply antialiased
+}
+html, body{
+    @apply h-full w-full overflow-auto
+}
+.navContainer{
+    @apply bg-zinc-800 top-0  fixed flex flex-col text-zinc-400 duration-200  overflow-hidden z-40 shadow-md sm:shadow-none
+}
+.navLogo{
+    @apply font-medium flex flex-row justify-center text-white py-2 sm:py-4 md:py-2 lg:py-4  text-xl sm:text-2xl 
+}
+.navLogo img{
+    @apply object-contain w-8 ml-4 sm:ml-0 md:ml-4 lg:ml-0 mt-auto mb-auto flex
+}
+.navLogo span{
+    @apply ml-2 mt-2 flex sm:hidden mt-auto mb-auto
+}
+.navLinks{
+    @apply mt-2 font-light hidden sm:block md:hidden lg:block duration-200 overflow-hidden
+}
+.navLinks a{
+    @apply h-auto sm:h-12 md:h-auto lg:h-12 text-sm sm:text-base flex cursor-pointer duration-200 hover:bg-zinc-700 hover:border-white hover:text-zinc-100
+}
+.navLinks a:last-child{
+    @apply border-b-0
+}
+.navLinks a i{
+    @apply mt-0.5 mr-4 
+}
+.navLinks a span {
+    @apply flex sm:hidden md:flex lg:hidden
+}
+.navLogo i{
+    @apply text-sm text-zinc-400 cursor-pointer hidden flex ml-auto mr-4 border-2 border-zinc-400 rounded-md p-1.5 px-3 mt-auto mb-auto
+}
+#nav_partition{
+    @apply mt-0 sm:mt-10 hidden sm:flex md:hidden lg:flex
+}
+.content-section{
+    @apply text-lg flex flex-col relative justify-center h-full ml-0 sm:ml-12 md:ml-0 lg:ml-12 text-center p-4 sm:p-16 md:p-4 lg:p-16 w-full sm:w-11/12 md:w-full lg:w-11/12
+}
+.subtitles{
+    @apply w-full sm:w-2/3 md:w-full lg:w-2/3 mr-auto ml-auto text-gray-400 text-sm
+}
+input{
+    @apply border-2 border-gray-300 rounded-md p-1 py-4 pl-8 focus:outline-none text-sm
+}
+.grid div>i{
+    @apply absolute float-left mt-auto ml-2
+}
+i{
+    @apply text-gray-400
+}
+.btn_default{
+    @apply bg-blue-800 border border-blue-800 text-white rounded-md p-2 w-full duration-200 hover:bg-transparent hover:text-blue-800 focus:bg-transparent focus:outline-none focus:text-blue-800
+}
+.symptomBoxEmpty{
+    @apply bg-white rounded-md p-2 border-none text-white text-black text-sm w-full pr-8
+}
+.SymptomBoxParent{
+    @apply w-full relative
+}
+.symptomBox{
+    @apply bg-blue-800 rounded-md p-2 text-white border-none text-sm w-full pr-8
+}
+#symptomContainer{
+    @apply grid grid-cols-4 relative gap-4
+}
+#symptomContainer div>i{
+    @apply hidden
+}
+.symptomBoxIcon{
+    @apply right-0 top-1/2 mr-2 cursor-pointer
+}
+th{
+    @apply text-gray-400 p-2 py-4 font-normal text-sm
+}
+td{
+    @apply p-2 py-4 text-sm
+}
+tbody tr{
+    @apply border-b border-gray-500 
+}
+td a{
+    @apply cursor-pointer text-blue-800
+}
+.DiseaseHeading{
+    @apply font-medium text-lg mt-6
+}
+.DiseaseDescription{
+    @apply text-sm text-justify mt-6
+}
+.DiseaseGroup{
+    @apply flex w-full flex-row border border-gray-400 rounded-md rounded-bl-none rounded-br-none mt-6 p-2 py-4
+}
+.TestBtn{
+    @apply bg-blue-800 w-24 sm:w-36 border text-sm border-blue-800 text-white rounded-md p-2 duration-200 hover:bg-transparent hover:text-blue-800 focus:bg-transparent focus:outline-none focus:text-blue-800
+}
+.PrecautionBtn{
+    @apply bg-red-500 w-24 sm:w-36 border text-sm border-red-500 text-white rounded-md p-2 duration-200 hover:bg-transparent hover:text-red-500 focus:bg-transparent focus:outline-none focus:text-red-500
+}
+.DiseaseSeverity{
+    @apply border-b border-l border-r border-gray-400 rounded-md rounded-tl-none rounded-tr-none flex flex-row w-full p-2 py-4
+}
+.iconSelect{
+    @apply float-right mt-4 text-sm text-gray-400
+}
+select{
+    @apply outline-none
+}
+#basicInfoDate{
+    @apply text-gray-400
+}
+.precautionContainer{
+    @apply bg-white rounded-md shadow-md p-12 z-40 relative h-auto m-auto flex flex-col justify-center items-center
+}
